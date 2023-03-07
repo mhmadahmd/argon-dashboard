@@ -99,17 +99,17 @@ if (document.querySelector('.fixed-plugin')) {
     //   }
     // }
 
-    fixedPluginCloseButton.forEach(function (el) {
-        el.onclick = function () {
-            fixedPlugin.classList.remove('show');
-        };
-    });
+    // fixedPluginCloseButton.forEach(function (el) {
+    //     el.onclick = function () {
+    //         fixedPlugin.classList.remove('show');
+    //     };
+    // });
 
-    document.querySelector('body').onclick = function (e) {
-        if (e.target != fixedPluginButton && e.target != fixedPluginButtonNav && e.target.closest('.fixed-plugin .card') != fixedPluginCard) {
-            fixedPlugin.classList.remove('show');
-        }
-    };
+    // document.querySelector('body').onclick = function (e) {
+    //     if (e.target != fixedPluginButton && e.target != fixedPluginButtonNav && e.target.closest('.fixed-plugin .card') != fixedPluginCard) {
+    //         fixedPlugin.classList.remove('show');
+    //     }
+    // };
 
     if (navbar) {
         if (navbar.getAttribute('data-scroll') == 'true' && buttonNavbarFixed) {
@@ -371,7 +371,7 @@ function debounce(func, wait, immediate) {
 
 // Toggle Sidenav
 const iconNavbarSidenav = document.getElementById('iconNavbarSidenav');
-const iconSidenav = document.getElementById('iconSidenav');
+// const iconSidenav = document.getElementById('iconSidenav');
 const sidenav = document.getElementById('sidenav-main');
 let body = document.getElementsByTagName('body')[0];
 let className = 'g-sidenav-pinned';
@@ -380,9 +380,9 @@ if (iconNavbarSidenav) {
     iconNavbarSidenav.addEventListener('click', toggleSidenav);
 }
 
-if (iconSidenav) {
-    iconSidenav.addEventListener('click', toggleSidenav);
-}
+// if (iconSidenav) {
+//     iconSidenav.addEventListener('click', toggleSidenav);
+// }
 
 function toggleSidenav() {
     if (body.classList.contains(className)) {
@@ -395,11 +395,11 @@ function toggleSidenav() {
         body.classList.add(className);
         sidenav.classList.add('bg-white');
         sidenav.classList.remove('bg-transparent');
-        iconSidenav.classList.remove('d-none');
+        // iconSidenav.classList.remove('d-none');
     }
 }
 
-let html = document.getElementsByTagName('html')[0];
+let html = document.getElementsByClassName('main-content')[0];
 
 html.addEventListener('click', function (e) {
     if (body.classList.contains('g-sidenav-pinned') && !e.target.classList.contains('sidenav-toggler-line')) {
