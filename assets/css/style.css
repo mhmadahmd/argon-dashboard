@@ -1,34 +1,65 @@
 .bg-primary {
-  background-color: #0e72bd !important;
+    background-color: #0e72bd !important;
+}
+
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #0e72bd;
+    --bs-btn-border-color: #0e72bd;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #0e72bd;
+    --bs-btn-hover-border-color: #0e72bd;
+    --bs-btn-focus-shadow-rgb: 80, 97, 194;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #0e72bd;
+    --bs-btn-active-border-color: #0e72bd;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #0e72bd;
+    --bs-btn-disabled-border-color: #0e72bd;
+}
+
+.btn-primary:hover,
+.btn.bg-gradient-primary:hover {
+    background-color: #0d5e9c;
+    border-color: #0d5e9c;
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(310deg, #0e72bd 0%, #0e72bd 100%) !important;
 }
 
 .my-3 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.form-floating > label {
+    right: 0 !important;
 }
 
 .sidenav-header {
-  height: auto;
+    height: auto;
 }
 
 .sidenav .navbar-brand {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .sidenav .navbar-brand,
 .sidenav .navbar-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar-vertical .navbar-brand>img,
+.navbar-vertical .navbar-brand > img,
 .navbar-vertical .navbar-brand-img {
-  max-height: 4rem;
+    max-height: 4rem;
 }
 
 .navbar-vertical.navbar-expand-xs .navbar-collapse {
-  display: block;
-  overflow: auto;
-  height: calc(100vh - 220px);
+    display: block;
+    overflow: auto;
+    height: calc(100vh - 220px);
 }
