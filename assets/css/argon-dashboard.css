@@ -49,10 +49,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 103, 116, 142;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Open Sans", sans-serif;
+  --bs-font-tajawal: 'Tajawal', sans-serif;;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: var(--bs-font-tajawal);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -89,7 +89,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: var(--bs-font-tajawal);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -290,7 +290,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: var(--bs-font-monospace);
+  font-family: var(--bs-font-tajawal);
   font-size: 1em;
 }
 
@@ -3581,7 +3581,7 @@ textarea.form-control.is-invalid {
 .btn {
   --bs-btn-padding-x: 1.25rem;
   --bs-btn-padding-y: 0.625rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family: var(--bs-font-tajawal);
   --bs-btn-font-size: 0.875rem;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;
@@ -3595,7 +3595,7 @@ textarea.form-control.is-invalid {
   --bs-btn-focus-box-shadow: 0 0 0 0.2rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
   display: inline-block;
   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-  font-family: var(--bs-btn-font-family);
+  font-family: var(--bs-font-tajawal);
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
@@ -6721,7 +6721,7 @@ fieldset:disabled .btn {
   display: block;
   padding: var(--bs-tooltip-arrow-height);
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: var(--bs-font-tajawal);
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6846,7 +6846,7 @@ fieldset:disabled .btn {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family: var(--bs-font-tajawal);
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10385,7 +10385,7 @@ fieldset:disabled .btn {
 }
 
 .font-monospace {
-  font-family: var(--bs-font-monospace) !important;
+  font-family: var(--bs-font-tajawal) !important;
 }
 
 .fs-1 {
@@ -20853,7 +20853,7 @@ fieldset:disabled .btn {
 }
 
 .card .card-body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Tajawal', sans-serif;
   padding: 1.5rem;
 }
 
